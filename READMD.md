@@ -24,3 +24,15 @@ Day 3 :
   ✅ Retrieved data from cloud
   ✅ Updated and deleted data
   ✅ Can see data in MongoDB Atlas dashboard
+  - create MVP TOday : MVP is the smallest set of features that lets a user successfully complete the main goal of the app.
+    MVP = Minimum Viable Product
+    MVP = Minimum features + Real users + Real problem + Working solution
+
+  - check the api endpoint via postman for 
+    API testing means verifying that backend endpoints behave correctly for all valid and invalid requests.
+    That includes:
+    Data reaching DB
+    Correct response
+    Error handling
+    Status codes
+    Business logic 
