@@ -1,0 +1,19 @@
+{
+  "name": "lecture01",
+  "version": "1.0.0",
+  "description": "a basic backend for deploy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "chai"
+  ],
+  "author": "sanju",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
