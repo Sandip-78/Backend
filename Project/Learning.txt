@@ -1,0 +1,3 @@
+for making folder and file from terminal use these :-
+New-Item index.js,app.js
+mkdir controllers,db,models,routes,middlewares
