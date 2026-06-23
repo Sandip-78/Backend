@@ -49,10 +49,10 @@ const userSchema = new mongoose.Schema(
     {timestamps : true}
 );
 
-userSchema.pre("save", async function(next){
-    if(!this.isModified("password")) return next(); // this condition is for when user update something detail and stored into db this hook will not change password every time
-    this.password = bcrypt.hash(this.password,10) // here is one problem when user change something detail and stored into db this hook changed password every time 
-    next() ;
+userSchema.pre("save", async function(){
+    if(!this.isModified("password")) return; // this condition is for when user update something detail and stored into db this hook will not change password every time
+    this.password = await bcrypt.hash(this.password,10) // here is one problem when user change something detail and stored into db this hook changed password every time 
+    
 }) // this is mongo hook middleware which perform something before the data stored(mujhe database me password stored krne se pahele hash karvana hai) into database
 
 
